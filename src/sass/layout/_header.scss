@@ -3,7 +3,8 @@
 	background-color: $pink-gray;
 
 	.container {
-		padding: 0;
+
+      padding: 0 #{$grid-gutter-width / 2};
 	}
 
 	@media (min-width: 1200px) {
@@ -12,7 +13,7 @@
 }
 
 .header {
-	background: black;
+	background: $black;
 	padding: 15px;
 
 	@media (min-width: 768px) and (orientation: landscape) {
@@ -110,7 +111,7 @@ nav {
 	top: 80px;
 	left: 0;
 	right: 0;
-	background: black;
+	background: $black;
 	transform: translateX(-100%);
 	transition: .3s transform;
 	list-style: none;
@@ -146,7 +147,8 @@ nav {
 
 		&.active,
 		&:hover {
-			background: red;
+
+			background: $red;
 		}
 	}
 
@@ -167,3 +169,72 @@ nav {
 	}
 }
 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -#{$grid-gutter-width / 2};
+}
+
+.col {
+  padding: 0 #{$grid-gutter-width / 2};
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+@for $i from 1 through $grid-count {
+  .col-#{$i} {
+    width: 100% / $grid-count * $i;
+  }
+}
+
+
+@each $item, $breakpoint in $breakpoints {
+  @media all and (min-width: $breakpoint) {
+    @for $i from 1 through $grid-count {
+      .col-#{$item}-#{$i} {
+        width: 100% / $grid-count * $i;
+      }
+    }
+  }
+}
+
+.header-content{
+  padding: 50px 0;
+  font-size: 16px;
+
+  h1{
+
+    font-size: 60px;
+    color: black;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin: 30px 0;
+  }
+}
+
+.btn{
+  border-style: solid;
+  border-radius: 9px;
+  background-color: transparent;
+  border-color: $red;
+  padding: 16px 60px;
+  color: $red;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+
+  &:hover{
+    background-color: $red;
+    color: #fff;
+  }
+}
+
+.video-holder{
+  box-shadow: 0 0 60px rgba(0,0,0,0.3);
+}
+
+.holder-btn{
+  padding-bottom: 120px;
+}

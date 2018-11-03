@@ -14,59 +14,36 @@ body {
 
 .container {
 	max-width: 1280px;
-	padding: 0 15px;
+	padding: 0 #{$grid-gutter-width / 2};
 	margin: 0 auto;
-}
-
-.common-section {
-	padding: 100px 0;
-}
-
-.block-inverse {
-	color: $white;
-}
-
-.text-center {
-	text-align: center;
-}
-
-.subscribe {
-	h2 {
-		text-transform: none;
-	}
-}
-
-.bg-img {
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-}
-
-.subscribe-form * {
-	color: $base-text-color;
-	font-size: 16px;
-	width: 50%;
-
-	[type="email"],
-	[type="submit"] {
-		appearance: none;
-	}
-
-	.btn {
-		flex-shrink: 0;
-	}
 }
 
 .row {
 	display: flex;
-	margin: 0 auto;
+	flex-wrap: wrap;
+	margin: 0 -#{$grid-gutter-width / 2};
+}
 
-	&.center {
-		justify-content: center;
+.col {
+	padding: 0 #{$grid-gutter-width / 2};
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+@for $i from 1 through $grid-count {
+	.col-#{$i} {
+		width: 100% / $grid-count * $i;
 	}
 }
 
-.form-item {
-	flex-grow: 1;
-	width: 100%;
+
+@each $item, $breakpoint in $breakpoints {
+	@media all and (min-width: $breakpoint) {
+		@for $i from 1 through $grid-count {
+			.col-#{$item}-#{$i} {
+				width: 100% / $grid-count * $i;
+			}
+		}
+	}
 }
+
