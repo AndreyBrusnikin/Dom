@@ -313,6 +313,7 @@ q:after {
 .header-holder {
   position: relative;
   background-color: #f6f2f2;
+  margin-bottom: 120px;
 }
 
 .header-holder .container {
@@ -708,6 +709,10 @@ nav:hover .nav {
 
 .header-content {
   padding: 50px 0;
+}
+
+.header-content p {
+  opacity: 0.7;
   font-size: 16px;
 }
 
@@ -717,7 +722,7 @@ nav:hover .nav {
   line-height: 1.2;
   text-transform: uppercase;
   font-weight: 900;
-  margin: 30px 0;
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -735,11 +740,14 @@ nav:hover .nav {
 .btn:hover {
   background-color: #ff3f40;
   color: #fff;
+  -webkit-transition: .7s;
+  transition: .7s;
 }
 
 .video-holder {
   -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
+  background-color: #c4c0b1;
 }
 
 .holder-btn {
@@ -1007,4 +1015,111 @@ body {
   .col-lg-12 {
     width: 100%;
   }
+}
+
+.holder-main-content {
+  padding: 0 0 55px 0;
+}
+
+.holder-main-content p {
+  font-size: 16px;
+}
+
+.holder-main-content h2 {
+  margin-bottom: 50px;
+}
+
+h2 {
+  color: #585858;
+  font-size: 42px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.holder-btn {
+  padding-bottom: 120px;
+}
+
+.icon-diamond,
+.icon-truck,
+.icon-settings,
+.icon-pencil {
+  padding-bottom: 25px;
+  color: #ff3f40;
+}
+
+.main-about h3 {
+  font-size: 24px;
+  color: #737373;
+  padding-bottom: 20px;
+}
+
+.main-about p {
+  font-size: 16px;
+  color: #737373;
+  padding-bottom: 40px;
+}
+
+.hr {
+  padding-bottom: 100px;
+}
+
+.hr hr {
+  border: 0;
+  width: 1200px;
+  background-color: #ececec;
+  height: 3px;
+}
+
+.holder-content {
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.holder-content h2 {
+  margin-bottom: 35px;
+}
+
+.holder-content p {
+  font-size: 16px;
+}
+
+.red-hr {
+  padding-bottom: 85px;
+}
+
+.red-hr hr {
+  border: 0;
+  width: 150px;
+  height: 3px;
+  background-color: #ff3f40;
+}
+
+.nav-content {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-content li {
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+  padding: 0 40px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.nav-content li a {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+  text-decoration: none;
+  color: #737373;
+}
+
+.nav-content li a:hover {
+  color: #ff3f40;
 }

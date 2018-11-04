@@ -1,6 +1,7 @@
 .header-holder {
 	position: relative;
 	background-color: $pink-gray;
+	margin-bottom: 120px;
 
 	.container {
 
@@ -201,7 +202,12 @@ nav {
 
 .header-content{
   padding: 50px 0;
-  font-size: 16px;
+
+	p{
+		opacity: 0.7;
+		font-size: 16px;
+	}
+
 
   h1{
 
@@ -210,7 +216,7 @@ nav {
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: 900;
-    margin: 30px 0;
+    margin-bottom: 30px;
   }
 }
 
@@ -228,13 +234,16 @@ nav {
   &:hover{
     background-color: $red;
     color: #fff;
+	transition: .7s;
   }
 }
 
 .video-holder{
   box-shadow: 0 0 60px rgba(0,0,0,0.3);
+	background-color: #c4c0b1;
 }
 
 .holder-btn{
-  padding-bottom: 120px;
+  	padding-bottom: 120px;
+
 }
