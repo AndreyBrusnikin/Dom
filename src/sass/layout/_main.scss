@@ -158,3 +158,39 @@ h2{
 		}
 	}
 }
+.holder-nav{
+	padding-bottom: 60px;
+}
+
+.section-2{
+	padding-bottom: 140px;
+}
+
+.template{
+	padding: 15px 0;
+}
+
+.red-hr2 {
+	position:absolute;
+	hr{
+		border: 0;
+		width: 135px;
+		height: 3px;
+		background-color: $red;
+	}
+
+}
+
+.holder-section-3{
+	padding-bottom: 30px;
+
+	h2{
+		padding-bottom: 50px;
+		margin: 0 -10px;
+	}
+
+	p {
+		max-width: 460px;
+		font-size: 16px;
+	}
+}
