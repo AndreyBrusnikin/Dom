@@ -1137,10 +1137,11 @@ h2 {
 }
 
 .red-hr2 {
-  position: absolute;
+  padding-bottom: 70px;
 }
 
 .red-hr2 hr {
+  position: absolute;
   border: 0;
   width: 135px;
   height: 3px;
@@ -1159,4 +1160,41 @@ h2 {
 .holder-section-3 p {
   max-width: 460px;
   font-size: 16px;
+}
+
+.holder-about h3 {
+  font-size: 24px;
+  color: #737373;
+  padding-bottom: 40px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.holder-about p {
+  font-size: 16px;
+  color: #737373;
+  padding-bottom: 50px;
+}
+
+.nav-about {
+  list-style: none;
+  padding: 0 0 45px 0;
+}
+
+.nav-about li {
+  margin: 0;
+  display: inline-block;
+  padding: 0 40px 0 0;
+}
+
+.nav-about li a {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  text-decoration: none;
+  color: #737373;
+}
+
+.nav-about li a:hover {
+  color: #ff3f40;
 }
