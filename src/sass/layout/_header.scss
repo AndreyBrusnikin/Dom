@@ -3,6 +3,10 @@
 	background-color: $pink-gray;
 	margin-bottom: 120px;
 
+	@media (max-width: 768px)  {
+		margin-bottom: 20px;
+	}
+
 	.container {
 
       padding: 0 #{$grid-gutter-width / 2};
@@ -14,12 +18,26 @@
 }
 
 .header {
-	background: $black;
-	padding: 15px;
 
-	@media (min-width: 768px) and (orientation: landscape) {
+
+	padding: 15px;
+	background: $black;
+
+
+
+
+
+	@media (min-width: 768px)  {
 		padding: 0;
+
 	}
+	@media (max-width: 768px)  {
+		margin: 0 -15px;
+
+	}
+
+
+
 }
 
 nav {
@@ -201,23 +219,39 @@ nav {
 }
 
 .header-content{
-  padding: 50px 0;
 
-	p{
+	padding: 20px 0;
+
+	h1 {
+
+		font-size: 30px;
+		color: black;
+		line-height: 1.2;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-bottom: 10px;
+	}
+
+	p {
 		opacity: 0.7;
 		font-size: 16px;
 	}
 
 
-  h1{
 
-    font-size: 60px;
-    color: black;
-    line-height: 1.2;
-    text-transform: uppercase;
-    font-weight: 900;
-    margin-bottom: 30px;
-  }
+	@media (min-width: 768px) and (orientation: landscape) {
+
+		padding: 50px 0;
+
+
+		h1 {
+
+			font-size: 56px;
+			line-height: 1.2;
+			font-weight: 900;
+			margin-bottom: 30px;
+		}
+	}
 }
 
 .btn{
@@ -239,11 +273,25 @@ nav {
 }
 
 .video-holder{
-  box-shadow: 0 0 60px rgba(0,0,0,0.3);
+	box-shadow: 0 0 60px rgba(0, 0, 0, 0.3);
 	background-color: #c4c0b1;
+
+
+
+	@media (max-width: 768px)  {
+
+		display: none;
+
+	}
 }
 
 .holder-btn{
-  	padding-bottom: 120px;
+
+  	padding-bottom: 30px;
+
+	@media (min-width: 768px) and (orientation: landscape){
+
+		padding-bottom: 120px;
+	}
 
 }
