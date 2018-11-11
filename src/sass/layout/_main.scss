@@ -455,6 +455,7 @@ h2{
 		border: 0;
 		height: 300px;
 		padding: 20px 20px;
+        resize: none;
 	}
 }
 
@@ -469,7 +470,19 @@ h2{
 }
 
 .bg-contact{
-	background-color: #2d2d2d;
+  background-color: #2d2d2d;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 100%;
+    width: 5000px;
+    background-color: #2d2d2d;
+
+  }
 }
 
 .contact-holder{
