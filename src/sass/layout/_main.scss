@@ -177,7 +177,7 @@ h2{
 }
 
 .template{
-	padding: 15px 0;
+	padding: 10px 0;
 }
 
 .red-hr2 {
@@ -252,11 +252,19 @@ h2{
 }
 
 .common-section {
-	padding: 100px 0;
+	padding: 140px 0;
 }
 
 .block-inverse {
 	color: $white;
+}
+
+.title-holder{
+	padding-bottom: 40px;
+}
+
+.sub{
+	padding-top: 60px;
 }
 
 .text-center {
@@ -264,6 +272,7 @@ h2{
 }
 
 .subscribe {
+	margin-bottom: 100px;
 	h2 {
 		color: #fff;
 		text-transform: none;
@@ -285,16 +294,36 @@ h2{
 	[type="submit"] {
 		appearance: none;
 	}
+}
 
 	.btn-submit {
 		flex-shrink: 0;
-	}
+		border-style: solid;
+		border-radius: 9px;
+		background-color: $red;
+		border-color: $red;
+		color: #fff;
+		font-size: 18px;
+		text-decoration: none;
+		font-weight: 700;
+		text-transform: uppercase;
+		width: 215px;
+
 }
 
 
 .form-item {
 	flex-grow: 1;
 	width: 100%;
+	padding: 0 20px;
+	input {
+		background-color: white;
+		border-radius: 10px;
+		width: 520px;
+		height: 80px;
+		font-size: 20px;
+		padding: 0 0 0 37px;
+	}
 }
 
 .section-photo{
@@ -366,4 +395,100 @@ h2{
 }
 .hidden {
 	display: none
+}
+
+.contact-title{
+	padding-bottom: 50px;
+
+	h2{
+		padding-bottom: 40px;
+		font-weight: 700;
+
+	}
+}
+
+.form-conatct{
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+
+
+}
+
+.form-name{
+	width: 47%;
+	margin: 0 42px 0 0;
+	padding-bottom: 45px;
+
+	input {
+		width: 100%;
+		background-color: #e5e5e5;
+		border-radius: 7px;
+		border: 0;
+		height: 70px;
+		padding-left: 20px;
+
+	}
+}
+
+.form-email-contact{
+	width: 47%;
+	padding-bottom: 40px;
+	input {
+		width: 100%;
+		background-color: #e5e5e5;
+		border-radius: 7px;
+		border: 0;
+		height: 70px;
+		padding-left: 20px;
+
+	}
+}
+
+.textarea{
+	width: 100%;
+	padding-bottom: 40px;
+	textarea{
+		width: 100%;
+		background-color: #e5e5e5;
+		border-radius: 7px;
+		border: 0;
+		height: 300px;
+		padding: 20px 20px;
+	}
+}
+
+.contact-submit{
+	width: 100%;
+	input{
+		width: 100%;
+		height: 75px;
+	}
+
+
+}
+
+.bg-contact{
+	background-color: #2d2d2d;
+}
+
+.contact-holder{
+	padding: 140px 80px;
+
+	h4{
+		text-transform: uppercase;
+		font-size: 18px;
+		padding-bottom: 40px;
+	}
+}
+
+.email-cont{
+	padding: 20px 0 ;
+}
+
+.phone-contact{
+	a {
+		color: #fff;
+		text-decoration: none;
+	}
 }
