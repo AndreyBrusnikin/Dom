@@ -179,6 +179,7 @@ h2{
 
 .template{
 	padding: 10px 0;
+	text-align: center;
 }
 
 .red-hr2 {
@@ -199,7 +200,7 @@ h2{
 
 	h2{
 		padding-bottom: 50px;
-		margin: 0 -10px;
+		margin: 0 10px;
 	}
 
 	p {
@@ -309,6 +310,7 @@ h2{
 		font-weight: 700;
 		text-transform: uppercase;
 		width: 215px;
+		display: inline-block;
 
 }
 
@@ -461,6 +463,7 @@ h2{
 }
 
 .contact-submit{
+	maring-bottom: 50px;
 	width: 100%;
 	input{
 		width: 100%;
